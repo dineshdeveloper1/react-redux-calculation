@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.calculation_block button{
+  background-color: #3d66b8;
+  color: white;
+  border-radius: 5px;
+  padding: 4px 4px;
+  margin: 0 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+.calculation_block input {
+  text-align: center;
+}

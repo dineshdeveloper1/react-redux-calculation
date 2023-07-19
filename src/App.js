@@ -1,22 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { useSelector, useDispatch } from 'react-redux';
+import { incrementNum, decrementNum } from './action/index'
 
 function App() {
+  const myState = useSelector((state) => state.changeTheNumber)
+  const dispatch = useDispatch()
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h2>Calculation in React Redux</h2>
+        <div className='calculation_block'>
+          <button onClick={() => dispatch(decrementNum())}>-</button>
+          <input type='text' value={myState} />
+          <button onClick={() => dispatch(incrementNum())}>+</button>
+        </div>
       </header>
     </div>
   );
