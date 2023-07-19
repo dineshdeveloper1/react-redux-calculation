@@ -21,9 +21,12 @@ code {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  width: 24px;
-  height: 24px;
+  width: 55px;
+  height: 55px;
+  font-size: 32px;
 }
 .calculation_block input {
   text-align: center;
+  height: 50px;
+  font-size: 30px;
 }
